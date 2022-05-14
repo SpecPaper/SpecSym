@@ -2,7 +2,7 @@
 SpecSym is a symbolic execution engine with speculation semantics and cache modelling. SpecSym built on top of the KLEE symbolic execution engine, can thus provide a testing engine to check for the data leakage through cache side channel as shown via Spectre attacks. 
 - Our prediction logic can precisely model the speculative behavior of different systems which is a crucial factor in detecting spectre attacks.  
 - Our pattern detection mechanism can provide useful information to identify the root cause of data leakage, which is crucial for implementing an efficient defense mechanism.  
-- Our symbolic cache model can verify whether the sensitive data leakage due to speculative execution can be observed by an attacker at a given program point. Our 
+- Our symbolic cache model can verify whether the sensitive data leakage due to speculative execution can be observed by an attacker at a given program point.
 
 ## Environment setting up.
 This tool is based on KLEE <2.3, which needs the support of LLVM-6.0.  
