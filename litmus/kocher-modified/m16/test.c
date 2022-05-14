@@ -21,7 +21,7 @@ uint8_t victim_fun(int idx)
     int a = 12;
     int temp;
 
-    if (idx < a) { //37
+    if (idx < a) {
         //fence
         //__asm__("MFENCE");
         temp &= array2[y*64];
@@ -36,10 +36,10 @@ uint8_t victim_fun(int idx)
     a = b*321;
     int d = a+b;
     
-    y = array1[idx];  //84     // loading secret into y.
+    y = array1[idx]; // loading secret into y.
     
 
-    if (idx < array1_size) { //90   // After reaching this branch, we execute line 50 speculatively. 
+    if (idx < array1_size) { // After reaching this branch, we execute line 27 speculatively. 
         //some dummy instructions
         y = array1[idx];
         temp &= array2[y*64];

@@ -100,7 +100,7 @@ These options impact the speculative paths exploring and the cache modeling
 ```
 ## Run a test without cache modelling: <br />
 ```
-$ cd litmus/PHT/v01/
+$ cd litmus/kocher-original/k01/
 $ clang-6.0 -g -c -emit-llvm test.c -o test.bc
 ```   
 * "--enable-speculative" option enables the speculative paths exploring.  
